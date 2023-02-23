@@ -1,0 +1,18 @@
+void beszur(int d, ELEM ** H)
+{
+	if(*H==NULL)
+	{
+		*H = (ELEM *)calloc(1,sizeof(ELEM);
+		 (**H).adat = d;
+		 return;
+	}
+	if((**H).adat==d) return;
+	if((**H).adat>d)
+	{
+		beszur(d,&(**H).bal);
+	}
+	else
+	{
+		beszur(d,&(**H).jobb);
+	}
+}
